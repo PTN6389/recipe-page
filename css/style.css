@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Outfit";
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: "Young Serif";
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-container {   
+    background-color: hsl(0, 0%, 100%);
+    width: 53%;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: "Young Serif";
+    font-weight: 400;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    
+    font-size: 2em;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);   
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-inline-start: 25px;  
+}
+
+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.preparation-time__item::marker {
+    color: hsl(332, 51%, 32%);  
+}
+
+.ingredients__item::marker, .instructions__item::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions__item::marker {
+    font-weight: bold;
+}
+
+.divider {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    opacity: .5;
+}
+
+.nutrition-table__item {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.nutrition-table__item-label {
+    flex: 2;
+}
+
+.nutrition-table__item-value {
+    color: hsl(14, 45%, 36%);  
+    font-weight: 700;
+    flex: 2;
+}
+
+.nutrition-table__divider {
+    opacity: .5;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 0;
+    }
+
+    .recipe-container { 
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .recipe-image {
+        border-radius: 0;
+    }
+
+    .recipe-body {
+        padding: 35px;
+    }
+
+    
+    
+}
