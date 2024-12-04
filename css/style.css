@@ -14,7 +14,7 @@
 
 body {
     background-color: hsl(30, 54%, 90%);
-    font-family: "Outfit", sans-serif;
+    font-family: 'Outfit',sans-serif;
     color: hsl(30, 10%, 34%);
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ body {
 }
 
 h1, h2 {
-    font-family: "Young Serif";
+    font-family: "Young Serif", sans-serif;
     font-weight: 400;
 }
 
@@ -115,10 +115,10 @@ li {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);    
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     body {
         margin: 0;
     }
@@ -133,12 +133,13 @@ li {
         border-radius: 0;
     }
 
-    .recipe-body, .recipe-title {
+    .recipe-body {
         padding: 35px;
     }
 
-    
+    h1, .description, .preparation-time {
+        padding-left: 35px;
+    }
 
-    
     
 }
