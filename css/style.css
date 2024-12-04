@@ -133,9 +133,11 @@ li {
         border-radius: 0;
     }
 
-    .recipe-body {
+    .recipe-body, .recipe-title {
         padding: 35px;
     }
+
+    
 
     
     
